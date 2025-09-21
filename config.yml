@@ -1,0 +1,285 @@
+aosp_revision: android-16.0.0_r1
+revision: refs/heads/16
+additional_remotes:
+  - name: grapheneos
+    fetch: https://github.com/GrapheneOS/
+  - name: grapheneos-gitlab
+    fetch: https://gitlab.com/grapheneos/
+additional_projects:
+  - path: branding
+    name: branding
+  - path: device/google/akita
+    name: device_google_akita
+  - path: device/google/akita-kernels/6.1
+    name: device_google_akita-kernels_6.1
+    clone_depth: 1
+  - path: device/google/akita-sepolicy
+    name: device_google_akita-sepolicy
+  - path: device/google/bluejay
+    name: device_google_bluejay
+  - path: device/google/bluejay-kernels/6.1
+    name: device_google_bluejay-kernels_6.1
+    clone_depth: 1
+  - path: device/google/bluejay-sepolicy
+    name: device_google_bluejay-sepolicy
+  - path: device/google/caimito
+    name: device_google_caimito
+  - path: device/google/caimito-kernels/6.1
+    name: device_google_caimito-kernels_6.1
+    clone_depth: 1
+  - path: device/google/caimito-sepolicy
+    name: device_google_caimito-sepolicy
+  - path: device/google/comet
+    name: device_google_comet
+  - path: device/google/comet-kernels/6.1
+    name: device_google_comet-kernels_6.1
+    clone_depth: 1
+  - path: device/google/comet-sepolicy
+    name: device_google_comet-sepolicy
+  - path: device/google/felix
+    name: device_google_felix
+  - path: device/google/felix-kernels/6.1
+    name: device_google_felix-kernels_6.1
+    clone_depth: 1
+  - path: device/google/felix-sepolicy
+    name: device_google_felix-sepolicy
+  - path: device/google/gs-common
+    name: device_google_gs-common
+  - path: device/google/gs101
+    name: device_google_gs101
+  - path: device/google/gs101-sepolicy
+    name: device_google_gs101-sepolicy
+  - path: device/google/gs201
+    name: device_google_gs201
+  - path: device/google/gs201-sepolicy
+    name: device_google_gs201-sepolicy
+  - path: device/google/lynx
+    name: device_google_lynx
+  - path: device/google/lynx-kernels/6.1
+    name: device_google_lynx-kernels_6.1
+    clone_depth: 1
+  - path: device/google/lynx-sepolicy
+    name: device_google_lynx-sepolicy
+  - path: device/google/pantah
+    name: device_google_pantah
+  - path: device/google/pantah-kernels/6.1
+    name: device_google_pantah-kernels_6.1
+    clone_depth: 1
+  - path: device/google/pantah-sepolicy
+    name: device_google_pantah-sepolicy
+  - path: device/google/raviole
+    name: device_google_raviole
+  - path: device/google/raviole-kernels/6.1
+    name: device_google_raviole-kernels_6.1
+    clone_depth: 1
+  - path: device/google/shusky
+    name: device_google_shusky
+  - path: device/google/shusky-kernels/6.1
+    name: device_google_shusky-kernels_6.1
+    clone_depth: 1
+  - path: device/google/shusky-sepolicy
+    name: device_google_shusky-sepolicy
+  - path: device/google/tangorpro
+    name: device_google_tangorpro
+  - path: device/google/tangorpro-kernels/6.1
+    name: device_google_tangorpro-kernels_6.1
+    clone_depth: 1
+  - path: device/google/tangorpro-sepolicy
+    name: device_google_tangorpro-sepolicy
+  - path: device/google/tegu
+    name: device_google_tegu
+  - path: device/google/tegu-kernels/6.1
+    name: device_google_tegu-kernels_6.1
+    clone_depth: 1
+  - path: device/google/tegu-sepolicy
+    name: device_google_tegu-sepolicy
+  - path: device/google/zuma
+    name: device_google_zuma
+  - path: device/google/zuma-sepolicy
+    name: device_google_zuma-sepolicy
+  - path: device/google/zumapro
+    name: device_google_zumapro
+  - path: device/google/zumapro-sepolicy
+    name: device_google_zumapro-sepolicy
+  - path: external/AppCompatConfig
+    name: platform_external_AppCompatConfig
+    groups: pdk-fs
+    clone_depth: 1
+  - path: external/AppStore
+    name: platform_external_AppStore
+    clone_depth: 1
+  - path: external/Auditor
+    name: platform_external_Auditor
+    clone_depth: 1
+  - path: external/Camera
+    name: platform_external_Camera
+    clone_depth: 1
+  - path: external/GmsCompatConfig
+    name: platform_external_GmsCompatConfig
+    groups: pdk-fs
+    clone_depth: 1
+  - path: external/hardened_malloc
+    name: hardened_malloc
+  - path: external/Info
+    name: platform_external_Info
+    groups: pdk-fs
+    clone_depth: 1
+  - path: external/Messaging
+    name: platform_external_Messaging
+    clone_depth: 1
+  - path: external/PdfViewer
+    name: platform_external_PdfViewer
+    clone_depth: 1
+  - path: external/talkback
+    name: platform_external_talkback
+    clone_depth: 1
+  - path: external/vanadium
+    name: platform_external_vanadium
+    clone_depth: 1
+    remote: grapheneos-gitlab
+  - path: packages/apps/AppCompatConfig
+    name: platform_packages_apps_AppCompatConfig
+    groups: pdk-fs
+  - path: packages/apps/CarrierConfig2
+    name: platform_packages_apps_CarrierConfig2
+    groups: pdk-cw-fs,pdk-fs
+  - path: packages/apps/DeskClock
+    name: platform_packages_apps_DeskClock
+    groups: pdk-fs
+  - path: packages/apps/ExactCalculator
+    name: platform_packages_apps_ExactCalculator
+  - path: packages/apps/GmsCompat
+    name: platform_packages_apps_GmsCompat
+    groups: pdk-fs
+  - path: packages/apps/LogViewer
+    name: platform_packages_apps_LogViewer
+    groups: pdk-fs
+  - path: packages/apps/NetworkLocation
+    name: platform_packages_apps_NetworkLocation
+    groups: pdk-fs
+  - path: packages/apps/Seedvault
+    name: platform_packages_apps_Seedvault
+  - path: packages/apps/SetupWizard2
+    name: platform_packages_apps_SetupWizard2
+  - path: packages/apps/Updater
+    name: platform_packages_apps_Updater
+  - path: prebuilts/qemu-kernel
+    name: platform_prebuilts_qemu-kernel
+    groups: pdk
+    clone_depth: 1
+  - path: script
+    name: script
+  - path: tools/arsclib
+    name: platform_tools_arsclib
+    groups: pdk
+  - path: vendor/adevtool
+    name: adevtool
+  - path: vendor/state
+    name: vendor_state
+    clone_depth: 1
+additional_non_manifest_repos:
+  - kernel_common-6.1
+  - kernel_common-6.6
+  - kernel_common-6.12
+  - kernel_manifest-6.1
+  - kernel_manifest-6.6
+  - kernel_manifest-6.12
+  - kernel_pixel
+  - platform_manifest
+forked_aosp_repos:
+  - art
+  - bionic
+  - bootable/recovery
+  - build/make
+  - build/release
+  - build/soong
+  - development
+  - device/common
+  - device/generic/goldfish
+  - external/conscrypt
+  - external/robolectric
+  - external/selinux
+  - frameworks/base
+  - frameworks/libs/systemui
+  - frameworks/native
+  - frameworks/opt/net/wifi
+  - frameworks/opt/telephony
+  - hardware/google/pixel
+  - hardware/google/pixel-sepolicy
+  - hardware/interfaces
+  - libcore
+  - packages/apps/Calendar
+  - packages/apps/CellBroadcastReceiver
+  - packages/apps/Contacts
+  - packages/apps/Dialer
+  - packages/apps/DocumentsUI
+  - packages/apps/EmergencyInfo
+  - packages/apps/Gallery2
+  - packages/apps/Launcher3
+  - packages/apps/Settings
+  - packages/apps/SettingsIntelligence
+  - packages/apps/StorageManager
+  - packages/apps/ThemePicker
+  - packages/apps/WallpaperPicker2
+  - packages/inputmethods/LatinIME
+  - packages/modules/adb
+  - packages/modules/AppSearch
+  - packages/modules/Bluetooth
+  - packages/modules/common
+  - packages/modules/ConfigInfrastructure
+  - packages/modules/Connectivity
+  - packages/modules/DnsResolver
+  - packages/modules/HealthFitness
+  - packages/modules/IntentResolver
+  - packages/modules/NetworkStack
+  - packages/modules/Nfc
+  - packages/modules/Permission
+  - packages/modules/RemoteKeyProvisioning
+  - packages/modules/StatsD
+  - packages/modules/Uwb
+  - packages/modules/Virtualization
+  - packages/modules/Wifi
+  - packages/providers/ContactsProvider
+  - packages/providers/DownloadProvider
+  - packages/providers/MediaProvider
+  - packages/services/Mms
+  - packages/services/Telecomm
+  - packages/services/Telephony
+  - system/apex
+  - system/ca-certificates
+  - system/core
+  - system/extras
+  - system/logging
+  - system/netd
+  - system/sepolicy
+  - system/vold
+  - tools/metalava
+clone_depth_1_aosp_repos:
+  - external/deqp
+  - external/icu
+  - external/kotlinc
+  - external/llvm
+  - external/llvm-libc
+  - external/openwrt-prebuilts
+  - external/swiftshader
+  - packages/apps/Car/CalendarPrebuilt
+  - packages/apps/Car/DialerPrebuilt
+  - packages/apps/Car/DriverUIPrebuilt
+  - packages/apps/Car/MediaPrebuilt
+  - packages/apps/Car/MessengerPrebuilt
+  - packages/apps/Car/RadioPrebuilt
+  - packages/apps/Car/RotaryImePrebuilt
+  - tools/deviceinfra/prebuilts
+removed_aosp_repos:
+  - external/chromium-webview
+  - packages/apps/Browser2
+  - packages/apps/Camera2
+  - packages/apps/DeskClock
+  - packages/apps/Gallery
+  - packages/apps/LegacyCamera
+  - packages/apps/Messaging
+  - packages/apps/QuickSearchBox
+  - prebuilts/bazel/darwin-x86_64
+  - prebuilts/clang/host/darwin-x86
+  - prebuilts/go/darwin-x86
+  - prebuilts/qemu-kernel
