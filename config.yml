@@ -199,6 +199,7 @@ forked_aosp_repos:
   - external/conscrypt
   - external/robolectric
   - external/selinux
+  - external/sqlite
   - frameworks/base
   - frameworks/libs/systemui
   - frameworks/native
