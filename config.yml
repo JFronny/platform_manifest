@@ -190,6 +190,7 @@ forked_aosp_repos:
   - system/sepolicy
   - system/tools/aidl
   - system/vold
+  - tools/apksig
   - tools/metalava
 clone_depth_1_aosp_repos:
   - external/deqp

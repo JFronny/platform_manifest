@@ -983,7 +983,7 @@
   <project path="tools/aadevtools" name="platform/tools/aadevtools" groups="pdk"/>
   <project path="tools/acloud" name="platform/tools/acloud" groups="tools,vts,projectarch,pdk,tradefed"/>
   <project path="tools/apifinder" name="platform/tools/apifinder" groups="pdk,tools"/>
-  <project path="tools/apksig" name="platform/tools/apksig" groups="pdk,tradefed"/>
+  <project path="tools/apksig" name="platform_tools_apksig" groups="pdk,tradefed" remote="grapheneos" aosp-name="platform/tools/apksig"/>
   <project path="tools/apkzlib" name="platform/tools/apkzlib" groups="pdk,tradefed"/>
   <project path="tools/arsclib" name="platform_tools_arsclib" groups="pdk" remote="grapheneos"/>
   <project path="tools/asuite" name="platform/tools/asuite" groups="pdk,sysui-studio"/>
