@@ -127,6 +127,7 @@ additional_non_manifest_repos:
   - kernel_manifest-6.6
   - kernel_manifest-6.12
   - kernel_pixel
+  - kernel_pixel_muzel
   - platform_manifest
 forked_aosp_repos:
   - art
