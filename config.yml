@@ -1,5 +1,5 @@
-aosp_revision: android-16.0.0_r3
-revision: refs/heads/16-qpr1
+aosp_revision: android-16.0.0_r4
+revision: refs/heads/16-qpr2
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
@@ -130,71 +130,72 @@ additional_non_manifest_repos:
   - kernel_pixel_muzel
   - platform_manifest
 forked_aosp_repos:
-  - art
-  - bionic
-  - bootable/recovery
-  - build/make
-  - build/release
-  - build/soong
-  - development
-  - device/common
-  - device/generic/goldfish
-  - external/conscrypt
-  - external/selinux
-  - external/sqlite
-  - frameworks/base
-  - frameworks/libs/systemui
-  - frameworks/native
-  - frameworks/opt/net/wifi
-  - frameworks/opt/telephony
-  - libcore
-  - packages/apps/Calendar
-  - packages/apps/CellBroadcastReceiver
-  - packages/apps/Contacts
-  - packages/apps/Dialer
-  - packages/apps/DocumentsUI
-  - packages/apps/EmergencyInfo
-  - packages/apps/Gallery2
-  - packages/apps/Launcher3
-  - packages/apps/Settings
-  - packages/apps/SettingsIntelligence
-  - packages/apps/StorageManager
-  - packages/apps/ThemePicker
-  - packages/apps/WallpaperPicker2
-  - packages/inputmethods/LatinIME
-  - packages/modules/adb
-  - packages/modules/AppSearch
-  - packages/modules/Bluetooth
-  - packages/modules/common
-  - packages/modules/ConfigInfrastructure
-  - packages/modules/Connectivity
-  - packages/modules/DnsResolver
-  - packages/modules/HealthFitness
-  - packages/modules/NetworkStack
-  - packages/modules/Nfc
-  - packages/modules/Permission
-  - packages/modules/RemoteKeyProvisioning
-  - packages/modules/StatsD
-  - packages/modules/Uwb
-  - packages/modules/Virtualization
-  - packages/modules/Wifi
-  - packages/providers/ContactsProvider
-  - packages/providers/DownloadProvider
-  - packages/providers/MediaProvider
-  - packages/providers/TelephonyProvider
-  - packages/services/Mms
-  - packages/services/Telecomm
-  - packages/services/Telephony
-  - system/ca-certificates
-  - system/core
-  - system/extras
-  - system/logging
-  - system/netd
-  - system/sepolicy
-  - system/tools/aidl
-  - system/vold
-  - tools/apksig
-  - tools/metalava
+  grapheneos:
+    - art
+    - bionic
+    - bootable/recovery
+    - build/make
+    - build/release
+    - build/soong
+    - development
+    - device/common
+    - device/generic/goldfish
+    - external/conscrypt
+    - external/selinux
+    - external/sqlite
+    - frameworks/base
+    - frameworks/libs/systemui
+    - frameworks/native
+    - frameworks/opt/net/wifi
+    - frameworks/opt/telephony
+    - libcore
+    - packages/apps/Calendar
+    - packages/apps/CellBroadcastReceiver
+    - packages/apps/Contacts
+    - packages/apps/Dialer
+    - packages/apps/DocumentsUI
+    - packages/apps/EmergencyInfo
+    - packages/apps/Gallery2
+    - packages/apps/Launcher3
+    - packages/apps/Settings
+    - packages/apps/SettingsIntelligence
+    - packages/apps/StorageManager
+    - packages/apps/ThemePicker
+    - packages/apps/WallpaperPicker2
+    - packages/inputmethods/LatinIME
+    - packages/modules/adb
+    - packages/modules/AppSearch
+    - packages/modules/Bluetooth
+    - packages/modules/common
+    - packages/modules/ConfigInfrastructure
+    - packages/modules/Connectivity
+    - packages/modules/DnsResolver
+    - packages/modules/HealthFitness
+    - packages/modules/NetworkStack
+    - packages/modules/Nfc
+    - packages/modules/Permission
+    - packages/modules/RemoteKeyProvisioning
+    - packages/modules/StatsD
+    - packages/modules/Uwb
+    - packages/modules/Virtualization
+    - packages/modules/Wifi
+    - packages/providers/ContactsProvider
+    - packages/providers/DownloadProvider
+    - packages/providers/MediaProvider
+    - packages/providers/TelephonyProvider
+    - packages/services/Mms
+    - packages/services/Telecomm
+    - packages/services/Telephony
+    - system/ca-certificates
+    - system/core
+    - system/extras
+    - system/logging
+    - system/netd
+    - system/sepolicy
+    - system/tools/aidl
+    - system/vold
+    - tools/apksig
+    - tools/metalava
 clone_depth_1_aosp_repos:
   - external/deqp
   - external/icu
