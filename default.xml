@@ -541,7 +541,7 @@
   <project path="external/speex" name="platform/external/speex" groups="pdk"/>
   <project path="external/SPIRV-Headers" name="platform/external/SPIRV-Headers" groups="pdk"/>
   <project path="external/SPIRV-Tools" name="platform/external/SPIRV-Tools" groups="pdk"/>
-  <project path="external/sqlite" name="platform_external_sqlite" groups="pdk" remote="grapheneos" aosp-name="platform/external/sqlite"/>
+  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk"/>
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk"/>
   <project path="external/starlark-go" name="platform/external/starlark-go" groups="pdk"/>
   <project path="external/stg" name="platform/external/stg" groups="pdk"/>
