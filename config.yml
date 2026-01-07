@@ -142,6 +142,7 @@ forked_aosp_repos:
     - device/generic/goldfish
     - external/conscrypt
     - external/selinux
+    - external/sqlite
     - frameworks/base
     - frameworks/libs/systemui
     - frameworks/native
