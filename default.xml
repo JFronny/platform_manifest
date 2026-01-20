@@ -338,7 +338,7 @@
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk"/>
   <project path="external/libpciaccess" name="platform/external/libpciaccess" groups="pdk"/>
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk"/>
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk"/>
+  <project path="external/libpng" name="platform_external_libpng" groups="pdk" remote="grapheneos" aosp-name="platform/external/libpng"/>
   <project path="external/libppd" name="platform/external/libppd" groups="pdk"/>
   <project path="external/libprotobuf-mutator" name="platform/external/libprotobuf-mutator" groups="pdk"/>
   <project path="external/libsrtp2" name="platform/external/libsrtp2" groups="pdk"/>
