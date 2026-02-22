@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/16-qpr2"/>
-  <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/heads/16-qpr2"/>
+  <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/tags/2026021200"/>
+  <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/tags/2026021200"/>
+  <remote name="jfronny" fetch="https://github.com/JFronny/" revision="refs/tags/2026021200"/>
+  <remote name="lineageos" fetch="https://github.com/LineageOS/" revision="lineage-23.2"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-16.0.0_r4" remote="aosp" sync-j="4"/>
   <superproject name="platform/superproject" remote="aosp" revision="android-16.0.0_r4"/>
@@ -244,7 +246,6 @@
   <project path="external/igt-gpu-tools" name="platform/external/igt-gpu-tools" groups="pdk"/>
   <project path="external/image_io" name="platform/external/image_io" groups="pdk"/>
   <project path="external/ims" name="platform/external/ims" groups="pdk"/>
-  <project path="external/Info" name="platform_external_Info" groups="pdk-fs" remote="grapheneos" clone-depth="1"/>
   <project path="external/intel-pmt-metadata" name="platform/external/intel-pmt-metadata" groups="pdk"/>
   <project path="external/iperf3" name="platform/external/iperf3" groups="pdk"/>
   <project path="external/iproute2" name="platform/external/iproute2" groups="pdk"/>
@@ -375,7 +376,6 @@
   <project path="external/mbedtls" name="platform/external/mbedtls" groups="pdk"/>
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk"/>
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="external/Messaging" name="platform_external_Messaging" remote="grapheneos" clone-depth="1"/>
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk"/>
   <project path="external/minidns" name="platform/external/minidns" groups="pdk"/>
   <project path="external/minigbm" name="platform/external/minigbm" groups="pdk"/>
@@ -612,7 +612,7 @@
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk"/>
   <project path="external/zxing" name="platform/external/zxing" groups="pdk"/>
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk,sysui-studio"/>
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="jfronny" aosp-name="platform/frameworks/base"/>
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk"/>
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk"/>
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk"/>
@@ -723,17 +723,17 @@
   <project path="packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" groups="pdk-cw-fs,pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/CellBroadcastReceiver"/>
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Contacts"/>
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="lineageos" aosp-name="platform/packages/apps/Contacts"/>
   <project path="packages/apps/ContactsPicker" name="platform/packages/apps/ContactsPicker" groups="pdk-fs"/>
-  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="grapheneos"/>
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="lineageos" aosp-name="platform/packages/apps/DeskClock"/>
   <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk"/>
   <project path="packages/apps/DeviceDiagnostics" name="platform/packages/apps/DeviceDiagnostics" groups="pdk"/>
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Dialer"/>
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="lineageos" aosp-name="platform/packages/apps/Dialer"/>
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/DocumentsUI"/>
   <project path="packages/apps/EmergencyInfo" name="platform_packages_apps_EmergencyInfo" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/EmergencyInfo"/>
-  <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="grapheneos"/>
   <project path="packages/apps/EyeDropper" name="platform/packages/apps/EyeDropper" groups="pdk-fs"/>
-  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Gallery2"/>
+  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs"/>
+  <project path="packages/apps/Glimpse" name="android_packages_apps_Glimpse" remote="lineageos"/>
   <project path="packages/apps/GmsCompat" name="platform_packages_apps_GmsCompat" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs"/>
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs"/>
@@ -741,6 +741,7 @@
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="grapheneos" aosp-name="platform/packages/apps/Launcher3"/>
   <project path="packages/apps/LogViewer" name="platform_packages_apps_LogViewer" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs"/>
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="lineageos" aosp-name="platform/packages/apps/Messaging"/>
   <project path="packages/apps/Multiuser" name="platform/packages/apps/Multiuser" groups="pdk-fs"/>
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs"/>
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs"/>
@@ -1050,6 +1051,6 @@
   <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" groups="trusty,pdk">
     <copyfile src="lk_inc.mk" dest="lk_inc.mk"/>
   </project>
-  <project path="vendor/adevtool" name="adevtool" remote="grapheneos"/>
+  <project path="vendor/adevtool" name="adevtool" remote="jfronny"/>
   <project path="vendor/state" name="vendor_state" remote="grapheneos" clone-depth="1"/>
 </manifest>
