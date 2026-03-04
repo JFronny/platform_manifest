@@ -145,6 +145,7 @@ forked_aosp_repos:
     - external/libpng
     - external/selinux
     - external/sqlite
+    - frameworks/av
     - frameworks/base
     - frameworks/libs/systemui
     - frameworks/native
