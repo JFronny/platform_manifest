@@ -58,6 +58,7 @@
   <project path="device/google/pantah-kernels/6.1" name="device_google_pantah-kernels_6.1" remote="grapheneos" clone-depth="1"/>
   <project path="device/google/raviole-kernels/6.1" name="device_google_raviole-kernels_6.1" remote="grapheneos" clone-depth="1"/>
   <project path="device/google/shusky-kernels/6.1" name="device_google_shusky-kernels_6.1" remote="grapheneos" clone-depth="1"/>
+  <project path="device/google/stallion-kernels/6.1" name="device_google_stallion-kernels_6.1" remote="grapheneos" clone-depth="1"/>
   <project path="device/google/tangorpro-kernels/6.1" name="device_google_tangorpro-kernels_6.1" remote="grapheneos" clone-depth="1"/>
   <project path="device/google/tegu-kernels/6.1" name="device_google_tegu-kernels_6.1" remote="grapheneos" clone-depth="1"/>
   <project path="device/linaro/dragonboard" name="device/linaro/dragonboard" groups="device,dragonboard,pdk"/>
