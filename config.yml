@@ -42,6 +42,9 @@ additional_projects:
   - path: device/google/shusky-kernels/6.1
     name: device_google_shusky-kernels_6.1
     clone_depth: 1
+  - path: device/google/stallion-kernels/6.1
+    name: device_google_stallion-kernels_6.1
+    clone_depth: 1
   - path: device/google/tangorpro-kernels/6.1
     name: device_google_tangorpro-kernels_6.1
     clone_depth: 1
@@ -135,13 +138,16 @@ forked_aosp_repos:
     - device/common
     - device/generic/goldfish
     - external/conscrypt
+    - external/dng_sdk
     - external/libpng
     - external/selinux
     - external/sqlite
+    - frameworks/av
     - frameworks/libs/systemui
     - frameworks/native
     - frameworks/opt/net/wifi
     - frameworks/opt/telephony
+    - hardware/st/nfc
     - libcore
     - packages/apps/Calendar
     - packages/apps/CellBroadcastReceiver
