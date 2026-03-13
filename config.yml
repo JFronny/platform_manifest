@@ -1,5 +1,5 @@
 aosp_revision: android-16.0.0_r4
-revision: refs/tags/2026021200
+revision: refs/tags/2026030700
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
@@ -54,9 +54,6 @@ additional_projects:
     clone_depth: 1
   - path: external/AppStore
     name: platform_external_AppStore
-    clone_depth: 1
-  - path: external/Auditor
-    name: platform_external_Auditor
     clone_depth: 1
   - path: external/Camera
     name: platform_external_Camera
@@ -148,6 +145,7 @@ forked_aosp_repos:
     - libcore
     - packages/apps/Calendar
     - packages/apps/CellBroadcastReceiver
+    - packages/apps/Dialer
     - packages/apps/DocumentsUI
     - packages/apps/EmergencyInfo
     - packages/apps/Launcher3
@@ -196,7 +194,6 @@ forked_aosp_repos:
     - packages/apps/Messaging
     - packages/apps/DeskClock
     - packages/apps/Contacts
-    - packages/apps/Dialer
 clone_depth_1_aosp_repos:
   - external/deqp
   - external/icu
@@ -228,6 +225,7 @@ removed_aosp_repos:
   - packages/apps/Browser2
   - packages/apps/Camera2
   - packages/apps/Gallery
+  - packages/apps/Gallery2
   - packages/apps/LegacyCamera
   - packages/apps/QuickSearchBox
   - prebuilts/bazel/darwin-x86_64

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/tags/2026021200"/>
-  <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/tags/2026021200"/>
-  <remote name="jfronny" fetch="https://github.com/JFronny/" revision="refs/tags/2026021200"/>
+  <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/tags/2026030700"/>
+  <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/tags/2026030700"/>
+  <remote name="jfronny" fetch="https://github.com/JFronny/" revision="refs/tags/2026030700"/>
   <remote name="lineageos" fetch="https://github.com/LineageOS/" revision="lineage-23.2"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-16.0.0_r4" remote="aosp" sync-j="4"/>
@@ -94,7 +94,6 @@
   <project path="external/arm-optimized-routines" name="platform/external/arm-optimized-routines" groups="pdk"/>
   <project path="external/arm-trusted-firmware" name="platform/external/arm-trusted-firmware" groups="pdk"/>
   <project path="external/armnn" name="platform/external/armnn" groups="pdk-lassen,pdk-gs-arm"/>
-  <project path="external/Auditor" name="platform_external_Auditor" remote="grapheneos" clone-depth="1"/>
   <project path="external/auto" name="platform/external/auto" groups="pdk"/>
   <project path="external/automotive-design-compose-protos" name="platform/external/automotive-design-compose-protos" groups="pdk"/>
   <project path="external/avb" name="platform/external/avb" groups="pdk"/>
@@ -728,11 +727,10 @@
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="lineageos" aosp-name="platform/packages/apps/DeskClock"/>
   <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk"/>
   <project path="packages/apps/DeviceDiagnostics" name="platform/packages/apps/DeviceDiagnostics" groups="pdk"/>
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="lineageos" aosp-name="platform/packages/apps/Dialer"/>
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Dialer"/>
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/DocumentsUI"/>
   <project path="packages/apps/EmergencyInfo" name="platform_packages_apps_EmergencyInfo" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/EmergencyInfo"/>
   <project path="packages/apps/EyeDropper" name="platform/packages/apps/EyeDropper" groups="pdk-fs"/>
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs"/>
   <project path="packages/apps/Glimpse" name="android_packages_apps_Glimpse" remote="lineageos"/>
   <project path="packages/apps/GmsCompat" name="platform_packages_apps_GmsCompat" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs"/>
