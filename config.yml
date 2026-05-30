@@ -34,6 +34,10 @@ additional_projects:
   - path: external/PdfViewer
     name: platform_external_PdfViewer
     clone_depth: 1
+  - path: external/SpeechServices
+    name: platform_external_SpeechServices
+    clone_depth: 1
+    remote: grapheneos-gitlab
   - path: external/talkback
     name: platform_external_talkback
     clone_depth: 1

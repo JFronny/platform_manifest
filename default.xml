@@ -528,6 +528,7 @@
   <project path="external/sonic" name="platform/external/sonic" groups="pdk"/>
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk"/>
   <project path="external/spdx-tools" name="platform/external/spdx-tools" groups="pdk"/>
+  <project path="external/SpeechServices" name="platform_external_SpeechServices" remote="grapheneos-gitlab" clone-depth="1"/>
   <project path="external/speex" name="platform/external/speex" groups="pdk"/>
   <project path="external/SPIRV-Headers" name="platform/external/SPIRV-Headers" groups="pdk"/>
   <project path="external/SPIRV-Tools" name="platform/external/SPIRV-Tools" groups="pdk"/>
