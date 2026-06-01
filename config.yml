@@ -163,6 +163,7 @@ forked_aosp_repos:
     - platform/libcore
     - platform/packages/apps/Calendar
     - platform/packages/apps/CellBroadcastReceiver
+    - platform/packages/apps/CertInstaller
     - platform/packages/apps/Contacts
     - platform/packages/apps/Dialer
     - platform/packages/apps/DocumentsUI
