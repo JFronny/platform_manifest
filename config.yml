@@ -1,5 +1,5 @@
 aosp_revision: android-16.0.0_r4
-revision: refs/tags/2026052400
+revision: refs/tags/2026060600
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
@@ -120,9 +120,11 @@ forked_aosp_repos:
     - platform/libcore
     - platform/packages/apps/Calendar
     - platform/packages/apps/CellBroadcastReceiver
+    - platform/packages/apps/CertInstaller
     - platform/packages/apps/Dialer
     - platform/packages/apps/DocumentsUI
     - platform/packages/apps/EmergencyInfo
+    - platform/packages/apps/KeyChain
     - platform/packages/apps/Launcher3
     - platform/packages/apps/Settings
     - platform/packages/apps/SettingsIntelligence
