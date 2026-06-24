@@ -205,6 +205,7 @@ forked_aosp_repos:
     - platform/system/tools/aidl
     - platform/system/update_engine
     - platform/system/vold
+    - platform/system/zygote
     - platform/tools/apksig
     - platform/tools/metalava
 clone_depth_1_aosp_repos:
