@@ -1,11 +1,8 @@
-aosp_revision: android-16.0.0_r4
-revision: refs/tags/2026060600
+aosp_revision: android-17.0.0_r1
+revision: refs/tags/2026062800
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
-  - name: grapheneos-tagged
-    fetch: https://github.com/GrapheneOS/
-    revision: 16-qpr2
   - name: grapheneos-gitlab
     fetch: https://gitlab.com/grapheneos/
   - name: jfronny
@@ -18,6 +15,7 @@ additional_projects:
     name: branding
   - path: device/google/laguna-kernels/6.6
     name: device_google_laguna-kernels_6.6
+    clone_depth: 1
   - path: external/AppCompatConfig
     name: platform_external_AppCompatConfig
     groups: pdk-fs
@@ -109,25 +107,20 @@ forked_aosp_repos:
     - platform/build/soong
     - platform/development
     - platform/external/conscrypt
-    - platform/external/dng_sdk
     - platform/external/libpng
     - platform/external/protobuf
     - platform/external/selinux
-    - platform/external/sqlite
     - platform/frameworks/av
     - platform/frameworks/libs/systemui
     - platform/frameworks/native
     - platform/frameworks/opt/net/wifi
     - platform/frameworks/opt/telephony
-    - platform/hardware/st/nfc
     - platform/libcore
     - platform/packages/apps/Calendar
     - platform/packages/apps/CellBroadcastReceiver
-    - platform/packages/apps/CertInstaller
     - platform/packages/apps/Dialer
     - platform/packages/apps/DocumentsUI
     - platform/packages/apps/EmergencyInfo
-    - platform/packages/apps/KeyChain
     - platform/packages/apps/Launcher3
     - platform/packages/apps/Settings
     - platform/packages/apps/SettingsIntelligence
@@ -138,7 +131,6 @@ forked_aosp_repos:
     - platform/packages/modules/adb
     - platform/packages/modules/AppSearch
     - platform/packages/modules/Bluetooth
-    - platform/packages/modules/common
     - platform/packages/modules/ConfigInfrastructure
     - platform/packages/modules/Connectivity
     - platform/packages/modules/DnsResolver
@@ -161,15 +153,16 @@ forked_aosp_repos:
     - platform/system/ca-certificates
     - platform/system/core
     - platform/system/extras
+    - platform/system/fs/fs_mgr
     - platform/system/logging
     - platform/system/netd
     - platform/system/sepolicy
     - platform/system/tools/aidl
+    - platform/system/update_engine
     - platform/system/vold
+    - platform/system/zygote
     - platform/tools/apksig
     - platform/tools/metalava
-  grapheneos-tagged:
-    - platform/system/update_engine
   jfronny:
     - platform/frameworks/base
   lineageos:
@@ -213,4 +206,5 @@ removed_aosp_repos:
   - platform/prebuilts/bazel/darwin-x86_64
   - platform/prebuilts/clang/host/darwin-x86
   - platform/prebuilts/go/darwin-x86
+  - platform/prebuilts/rust-toolchain/darwin
   - platform/prebuilts/qemu-kernel
