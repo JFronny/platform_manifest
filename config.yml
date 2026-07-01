@@ -3,6 +3,9 @@ revision: refs/tags/2026060600
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
+  - name: grapheneos-tagged
+    fetch: https://github.com/GrapheneOS/
+    revision: 16-qpr2
   - name: grapheneos-gitlab
     fetch: https://gitlab.com/grapheneos/
   - name: jfronny
@@ -165,6 +168,8 @@ forked_aosp_repos:
     - platform/system/vold
     - platform/tools/apksig
     - platform/tools/metalava
+  grapheneos-tagged:
+    - platform/system/update_engine
   jfronny:
     - platform/frameworks/base
   lineageos:
