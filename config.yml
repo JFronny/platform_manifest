@@ -102,7 +102,6 @@ forked_aosp_repos:
     - platform/art
     - platform/bionic
     - platform/bootable/recovery
-    - platform/build
     - platform/build/release
     - platform/build/soong
     - platform/development
@@ -165,6 +164,7 @@ forked_aosp_repos:
     - platform/tools/metalava
   jfronny:
     - platform/frameworks/base
+    - platform/build
   lineageos:
     - platform/packages/apps/Messaging
     - platform/packages/apps/DeskClock
