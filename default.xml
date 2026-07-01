@@ -27,7 +27,7 @@
   </project>
   <project path="build/pesto" name="platform/build/pesto" groups="pdk"/>
   <project path="build/release" name="platform_build_release" groups="pdk,tradefed,sysui-studio" remote="grapheneos" aosp-name="platform/build/release"/>
-  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="grapheneos" aosp-name="platform/build/soong">
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="jfronny" aosp-name="platform/build/soong">
     <linkfile src="root.bp" dest="Android.bp"/>
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>

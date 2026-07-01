@@ -103,7 +103,6 @@ forked_aosp_repos:
     - platform/bionic
     - platform/bootable/recovery
     - platform/build/release
-    - platform/build/soong
     - platform/development
     - platform/external/conscrypt
     - platform/external/libpng
@@ -165,6 +164,7 @@ forked_aosp_repos:
   jfronny:
     - platform/frameworks/base
     - platform/build
+    - platform/build/soong
   lineageos:
     - platform/packages/apps/Messaging
     - platform/packages/apps/DeskClock
