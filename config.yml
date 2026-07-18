@@ -1,5 +1,5 @@
 aosp_revision: android-17.0.0_r1
-revision: refs/tags/2026062800
+revision: refs/tags/2026071500
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
