@@ -103,8 +103,10 @@ forked_aosp_repos:
     - platform/bionic
     - platform/bootable/recovery
     - platform/build/release
+    - platform/cts
     - platform/development
     - platform/external/conscrypt
+    - platform/external/freetype
     - platform/external/libpng
     - platform/external/protobuf
     - platform/external/selinux
@@ -127,6 +129,7 @@ forked_aosp_repos:
     - platform/packages/apps/WallpaperPicker2
     - platform/packages/inputmethods/LatinIME
     - platform/packages/modules/adb
+    - platform/packages/modules/AdServices
     - platform/packages/modules/AppSearch
     - platform/packages/modules/Bluetooth
     - platform/packages/modules/ConfigInfrastructure
@@ -151,7 +154,6 @@ forked_aosp_repos:
     - platform/system/ca-certificates
     - platform/system/core
     - platform/system/extras
-    - platform/system/fs/fs_mgr
     - platform/system/logging
     - platform/system/netd
     - platform/system/sepolicy
