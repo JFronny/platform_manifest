@@ -9,7 +9,7 @@ additional_remotes:
     fetch: https://github.com/JFronny/
   - name: lineageos
     fetch: https://github.com/LineageOS/
-    revision: lineage-23.2
+    revision: lineage-24.0
 additional_projects:
   - path: branding
     name: branding

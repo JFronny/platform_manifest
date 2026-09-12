@@ -5,7 +5,7 @@
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/tags/2026091000"/>
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/tags/2026091000"/>
   <remote name="jfronny" fetch="https://github.com/JFronny/" revision="refs/tags/2026091000"/>
-  <remote name="lineageos" fetch="https://github.com/LineageOS/" revision="lineage-23.2"/>
+  <remote name="lineageos" fetch="https://github.com/LineageOS/" revision="lineage-24.0"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-17.0.0_r1" remote="aosp" sync-j="4"/>
   <superproject name="platform/superproject" remote="aosp" revision="android-17.0.0_r1"/>
