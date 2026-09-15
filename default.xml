@@ -712,7 +712,6 @@
   <project path="packages/apps/AppCompatConfig" name="platform_packages_apps_AppCompatConfig" groups="pdk-fs" remote="grapheneos"/>
   <project path="packages/apps/AvatarPicker" name="platform/packages/apps/AvatarPicker" groups="pdk-fs"/>
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs"/>
-  <project path="packages/apps/Calendar" name="platform_packages_apps_Calendar" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Calendar"/>
   <project path="packages/apps/Car/Launcher" name="platform/packages/apps/Car/Launcher" groups="pdk-fs"/>
   <project path="packages/apps/Car/Notification" name="platform/packages/apps/Car/Notification" groups="pdk-fs"/>
   <project path="packages/apps/Car/RotaryController" name="platform/packages/apps/Car/RotaryController" groups="pdk-fs,pdk-cw-tvc"/>
@@ -731,6 +730,7 @@
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/Dialer"/>
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/DocumentsUI"/>
   <project path="packages/apps/EmergencyInfo" name="platform_packages_apps_EmergencyInfo" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/EmergencyInfo"/>
+  <project path="packages/apps/Etar" name="android_packages_apps_Etar" remote="lineageos"/>
   <project path="packages/apps/EyeDropper" name="platform/packages/apps/EyeDropper" groups="pdk-fs"/>
   <project path="packages/apps/Glimpse" name="android_packages_apps_Glimpse" remote="lineageos"/>
   <project path="packages/apps/GmsCompat" name="platform_packages_apps_GmsCompat" groups="pdk-fs" remote="grapheneos"/>
