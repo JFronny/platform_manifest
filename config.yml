@@ -1,5 +1,5 @@
 aosp_revision: android-17.0.0_r1
-revision: refs/tags/2026091000
+revision: refs/tags/2026100600
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
@@ -92,8 +92,10 @@ additional_non_manifest_repos:
   - kernel_common-6.1
   - kernel_common-6.6
   - kernel_common-6.12
+  - kernel_common-6.18
   - kernel_manifest-6.6
   - kernel_manifest-6.12
+  - kernel_manifest-6.18
   - kernel_pixel_6.1
   - kernel_pixel_6.6
   - platform_manifest
@@ -107,9 +109,11 @@ forked_aosp_repos:
     - platform/build/release
     - platform/cts
     - platform/development
+    - platform/external/cldr
     - platform/external/conscrypt
     - platform/external/exfatprogs
     - platform/external/freetype
+    - platform/external/icu
     - platform/external/libcupsfilters
     - platform/external/libhevc
     - platform/external/libjxl
@@ -118,6 +122,7 @@ forked_aosp_repos:
     - platform/external/selinux
     - platform/external/wpa_supplicant_8
     - platform/frameworks/av
+    - platform/frameworks/hardware/interfaces
     - platform/frameworks/libs/systemui
     - platform/frameworks/native
     - platform/frameworks/opt/net/wifi
@@ -171,6 +176,7 @@ forked_aosp_repos:
     - platform/system/logging
     - platform/system/netd
     - platform/system/sepolicy
+    - platform/system/timezone
     - platform/system/tools/aidl
     - platform/system/update_engine
     - platform/system/vold
