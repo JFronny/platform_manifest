@@ -1,5 +1,5 @@
 aosp_revision: android-17.0.0_r1
-revision: refs/tags/2026100600
+revision: refs/tags/2026110200
 additional_remotes:
   - name: grapheneos
     fetch: https://github.com/GrapheneOS/
@@ -13,8 +13,8 @@ additional_remotes:
 additional_projects:
   - path: branding
     name: branding
-  - path: device/google/laguna-kernels/6.6
-    name: device_google_laguna-kernels_6.6
+  - path: device/google/laguna-kernels/6.18
+    name: device_google_laguna-kernels_6.18
     clone_depth: 1
   - path: external/AppCompatConfig
     name: platform_external_AppCompatConfig
@@ -46,6 +46,22 @@ additional_projects:
     name: platform_external_vanadium
     clone_depth: 1
     remote: grapheneos-gitlab
+  - path: kernel/prebuilts/6.18/arm64
+    name: kernel_prebuilts_6.18_arm64
+    groups: pdk
+    clone_depth: 1
+  - path: kernel/prebuilts/6.18/x86_64
+    name: kernel_prebuilts_6.18_x86-64
+    groups: pdk
+    clone_depth: 1
+  - path: kernel/prebuilts/common-modules/virtual-device/6.18/arm64
+    name: kernel_prebuilts_common-modules_virtual-device_6.18_arm64
+    groups: pdk
+    clone_depth: 1
+  - path: kernel/prebuilts/common-modules/virtual-device/6.18/x86-64
+    name: kernel_prebuilts_common-modules_virtual-device_6.18_x86-64
+    groups: pdk
+    clone_depth: 1
   - path: packages/apps/AppCompatConfig
     name: platform_packages_apps_AppCompatConfig
     groups: pdk-fs
@@ -67,10 +83,6 @@ additional_projects:
     name: platform_packages_apps_SetupWizard2
   - path: packages/apps/Updater
     name: platform_packages_apps_Updater
-  - path: prebuilts/qemu-kernel
-    name: platform_prebuilts_qemu-kernel
-    groups: pdk
-    clone_depth: 1
   - path: script
     name: script
   - path: tools/arsclib
@@ -93,8 +105,6 @@ additional_non_manifest_repos:
   - kernel_common-6.6
   - kernel_common-6.12
   - kernel_common-6.18
-  - kernel_manifest-6.6
-  - kernel_manifest-6.12
   - kernel_manifest-6.18
   - kernel_pixel_6.1
   - kernel_pixel_6.6
@@ -103,23 +113,30 @@ forked_aosp_repos:
   grapheneos:
     - device/common
     - device/generic/goldfish
+    - device/google/cuttlefish
     - platform/art
     - platform/bionic
     - platform/bootable/recovery
     - platform/build/release
     - platform/cts
     - platform/development
+    - platform/external/aac
+    - platform/external/avb
     - platform/external/cldr
     - platform/external/conscrypt
     - platform/external/exfatprogs
     - platform/external/freetype
+    - platform/external/hplip
     - platform/external/icu
     - platform/external/libcupsfilters
     - platform/external/libhevc
     - platform/external/libjxl
+    - platform/external/libopenapv
     - platform/external/libpng
+    - platform/external/mesa3d
     - platform/external/protobuf
     - platform/external/selinux
+    - platform/external/tremolo
     - platform/external/wpa_supplicant_8
     - platform/frameworks/av
     - platform/frameworks/hardware/interfaces
@@ -130,16 +147,19 @@ forked_aosp_repos:
     - platform/hardware/interfaces
     - platform/hardware/st/nfc
     - platform/libcore
+    - platform/packages/apps/Car/Settings
     - platform/packages/apps/CellBroadcastReceiver
     - platform/packages/apps/ContactsPicker
     - platform/packages/apps/Dialer
     - platform/packages/apps/DocumentsUI
     - platform/packages/apps/EmergencyInfo
     - platform/packages/apps/Launcher3
+    - platform/packages/apps/ManagedProvisioning
     - platform/packages/apps/Settings
     - platform/packages/apps/SettingsIntelligence
     - platform/packages/apps/StorageManager
     - platform/packages/apps/ThemePicker
+    - platform/packages/apps/TvSettings
     - platform/packages/apps/WallpaperPicker2
     - platform/packages/inputmethods/LatinIME
     - platform/packages/modules/adb
@@ -150,9 +170,12 @@ forked_aosp_repos:
     - platform/packages/modules/Connectivity
     - platform/packages/modules/DnsResolver
     - platform/packages/modules/HealthFitness
+    - platform/packages/modules/IntentResolver
     - platform/packages/modules/NetworkStack
+    - platform/packages/modules/NeuralNetworks
     - platform/packages/modules/Nfc
     - platform/packages/modules/Permission
+    - platform/packages/modules/Profiling
     - platform/packages/modules/RemoteKeyProvisioning
     - platform/packages/modules/StatsD
     - platform/packages/modules/Telephony
@@ -164,6 +187,7 @@ forked_aosp_repos:
     - platform/packages/providers/MediaProvider
     - platform/packages/providers/TelephonyProvider
     - platform/packages/services/BuiltInPrintService
+    - platform/packages/services/Iwlan
     - platform/packages/services/Mms
     - platform/packages/services/Telecomm
     - platform/packages/services/Telephony
@@ -183,6 +207,7 @@ forked_aosp_repos:
     - platform/system/zygote
     - platform/tools/apksig
     - platform/tools/metalava
+    - trusty/lib
   jfronny:
     - platform/frameworks/base
     - platform/build
@@ -211,7 +236,12 @@ removed_aosp_repos:
   - device/google/atv
   - device/google/common/etm
   - device/google/contexthub
+  - device/google/laguna-kernels/6.6
   - device/google/trout
+  - kernel/prebuilts/6.18/arm64
+  - kernel/prebuilts/6.18/x86-64
+  - kernel/prebuilts/common-modules/virtual-device/6.18/arm64
+  - kernel/prebuilts/common-modules/virtual-device/6.18/x86-64
   - platform/external/chromium-webview
   - platform/external/nos/host/generic
   - platform/hardware/google/av
